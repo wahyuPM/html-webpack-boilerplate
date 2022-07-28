@@ -45,6 +45,27 @@
     .card:hover .card-shadow {
         @apply shadow-lg
     }
+
+    /* breadcrumb */
+    ul.breadcrumb {
+        @apply flex flex-row items-center text-lg
+    }
+
+    ul.breadcrumb li:not(:last-child):after {
+       content: " / ";
+       @apply px-4
+    }
+
+    ul.breadcrumb li:not(:last-child) a {
+        @apply font-light
+    }
+
+    ul.breadcrumb li:last-child a {
+        @apply font-semibold
+    }
+
+    /* slideshow */
+    
 }
 
 @screen md {
