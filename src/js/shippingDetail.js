@@ -35,7 +35,6 @@ for (let index = 0; index < inputs.length; index++) {
     input.addEventListener("change", (event) => {
         // ambil value dari input
         data[event.target.id] = event.target.value
-        console.log(data)
         check()
     })
 }
